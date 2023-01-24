@@ -1,9 +1,5 @@
-import tkinter as tk
-
-
-class PlaybackControlActions(tk.Tk):
+class PlaybackControlActions:
     def __init__(self):
-        tk.Frame.__init__(self)
 
         self.playback_control_commands = {
             "Play": self.play_control_action,

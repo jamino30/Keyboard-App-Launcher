@@ -1,4 +1,5 @@
 from AppLauncher import AppLauncher, tk
+import Constants as Const
 
 """
 
@@ -24,7 +25,7 @@ if __name__ == "__main__":
     cen_height = int(root.winfo_screenheight() / 4 - (disp_height / 2))
     root.geometry(f"+{cen_width}+{cen_height}")
     root.resizable(False, False)
-    root.configure(background="black")
+    root.configure(background=Const.BG_COLOR)
     root.attributes("-alpha", 0.9)
 
     AppLauncher(root)
